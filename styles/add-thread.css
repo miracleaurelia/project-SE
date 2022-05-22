@@ -1,0 +1,139 @@
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+p, h1, h2, h3 {
+    color: black
+}
+
+.select select {
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: #34495e;
+    background-image: none;
+    cursor: pointer;
+}
+
+/* Remove IE arrow */
+.select select::-ms-expand {
+    display: none;
+}
+
+/* Custom Select wrapper */
+.sel-category .select {
+    position: relative;
+    display: flex;
+    width: 15em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+}
+
+/* Arrow */
+.sel-category .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+/* Transition */
+.sel-category .select:hover::after {
+    color: #ADD8E6;
+}
+
+#thread-form a {
+    font-weight: bold;
+    color: #34495e;
+    text-decoration: none;
+    padding: .25em;
+    border-radius: .25em;
+    background: white;
+}
+
+.sel-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sel-category > * {
+    margin: 1rem;
+}
+
+@media (max-width: 500px) {
+    .sel-category {
+        flex-direction: column;
+    }
+}
+
+.post-info > *{
+    margin: 1rem 0;
+}
+
+.ck.ck-editor__main {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ck-editor__editable_inline, .ck.ck-editor {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+figure table {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+figure table tbody tr td {
+    border: solid 1px black;
+    padding: 0.5rem;
+}
+
+
+blockquote {
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}

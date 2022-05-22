@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 991px) {
+	.grid-item {
+		width: 25%;
+	}
+
+	.top_nav {
+		display: none;
+	}
+
+	.navbar_menu {
+		display: none;
+	}
+
+	.hamburger_container {
+		display: block;
+	}
+
+	h1 {
+		font-size: 48px;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	.main_slider_content h6 {
+		margin-bottom: 23px;
+	}
+
+	.shop_now_button {
+		margin-top: 26px;
+	}
+
+	.main_slider_content {
+		width: 100%;
+		padding-right: 15px;
+	}
+
+	.banner_item {
+		height: 160px;
+	}
+
+	.banner_category {
+		min-width: 160px;
+		height: 40px;
+	}
+
+	.banner_category a {
+		font-size: 16px;
+		line-height: 40px;
+	}
+
+	.forum_intro_col, .searchimg_intro_col {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.forum_intro_content, .searchimg_intro_content {
+		position: relative;
+		top: auto;
+		left: auto;
+		height: auto;
+	}
+
+	.forum_intro_img, .searchimg_intro_img {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.main_slider {
+		min-height: 475px;
+		height: calc(100vw / 1.714);
+	}
+
+	.main_slider_content {
+		width: 80%;
+	}
+
+	.banner_item {
+		height: 220px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h6 {
+		font-size: 12px;
+	}
+
+	.main_slider_content h6 {
+		margin-bottom: 20px;
+	}
+
+	.shop_now_button {
+		margin-top: 23px;
+	}
+
+	.red_button a {
+		font-size: 12px;
+	}
+
+	.banner_item {
+		margin-bottom: 30px;
+		height: 210px;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.logo_container a {
+		font-size: 12px;
+	}
+
+	.hamburger_container {
+		margin-left: 25px;
+	}
+
+	.hamburger_container i {
+		font-size: 16px;
+	}
+
+	.hamburger_close {
+		top: 14px;
+		right: 4px;
+	}
+
+	.hamburger_close i {
+		font-size: 20px;
+	}
+
+	.hamburger_menu_content {
+		padding-right: 15px;
+		padding-top: 70px;
+	}
+
+	.menu_item {
+		border-bottom-color: rgba(181, 174, 196, 0.5);
+	}
+
+	.menu_item>a {
+		font-size: 12px;
+		line-height: 35px;
+		height: 35px;
+	}
+
+	.menu_selection li a {
+		font-size: 12px;
+		line-height: 35px;
+		height: 35px;
+	}
+
+	.navbar {
+		height: 70px;
+	}
+
+	.navbar_user li a {
+		width: 30px;
+		height: 30px;
+		font-size: 12px;
+	}
+
+	.main_slider {
+		height: calc(100vh - 70px);
+		/*height: 80vw;*/
+		min-height: auto;
+	}
+
+	.main_slider_content h6 {
+		margin-bottom: 15px;
+	}
+
+	.main_slider_content h1 {
+		font-size: 24px;
+	}
+
+	.shop_now_button {
+		margin-top: 15px;
+		width: 100px;
+		height: 35px;
+	}
+
+	.red_button a {
+		font-size: 10px;
+	}
+
+	.banner_item {
+		height: calc((100vw - 30px) / 2.6);
+	}
+}
+
+.search-area form .form-group {
+	display: flex;
+}
